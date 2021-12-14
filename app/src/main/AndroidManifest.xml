@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bmtbima.appbima">
+
+    <application
+        android:name=".utils.BaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BMT BIMA"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Appbima">
+        <activity
+            android:name=".pkp.PkpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailPengumuman"
+            android:exported="false" />
+        <activity
+            android:name=".LandingActivity"
+            android:exported="false"
+            android:label="Penilaian Kinerja Pegawai" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            //intent-filter dipindah ke activity yg mau di Run
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

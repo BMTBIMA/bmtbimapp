@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:src="@drawable/banner"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/monitoring"
+                android:layout_marginHorizontal="30dp"
+                android:src="@drawable/ic_monitor_dashboard"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:tint="@color/blue" />
+
+             <ImageView
+                android:id="@+id/laporan"
+                 android:layout_marginHorizontal="30dp"
+                android:src="@drawable/ic_clipboard_text_outline"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:tint="@color/blue" />
+            <ImageView
+                android:id="@+id/pkp"
+                android:layout_marginHorizontal="30dp"
+                android:src="@drawable/ic_monitor_dashboard"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:tint="@color/blue" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:textColor="@color/blue"
+            android:textSize="12dp"
+            android:text="Monitoring" />
+
+        <TextView
+            android:text="Laporan Keuangan"
+            android:layout_marginHorizontal="40dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="PKP"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/profile"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="Pengumuman"
+            android:textColor="@color/white"
+            android:layout_marginLeft="80dp"
+            android:textSize="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Selengkapnya"
+            android:textColor="@color/white"
+            android:layout_marginLeft="80dp"
+            android:textSize="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_adapter_pengumuman"
+        android:id="@+id/rvPengumuman"/>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:context=".adapter.AdapterPengumuman">
+
+    <ImageView
+        android:background="@color/blue"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/iconPengumuman"/>
+    <LinearLayout
+        android:background="@android:color/holo_red_dark"
+        android:layout_toRightOf="@id/iconPengumuman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/judulPengumuman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calligraffitti"
+            android:text="@string/hello_blank_fragment"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Lampiran"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
